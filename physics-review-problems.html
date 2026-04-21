@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Middle School Physics Review Problems With Answers</title>
+  <meta name="description" content="Free mixed physics review problems with answers for middle school teachers. 12 multi-topic practice questions for Grades 6–8 — density, forces, energy, speed, and more. Ready for test prep." />
+  <meta name="keywords" content="physics review worksheet middle school, mixed physics problems with answers, physical science review worksheet, physics practice test middle school, science review problems" />
+
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #1a1a1a;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+      color: #111827;
+    }
+
+    h2 {
+      font-size: 1.45em;
+      color: #111827;
+      margin-top: 2em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #cbd5e1;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      color: #334155;
+      margin-top: 1.6em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      margin: 0.4em 0 1em 1.4em;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.35em;
+    }
+
+    .problem-block {
+      background-color: #f8fafc;
+      border-left: 4px solid #475569;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .problem-block p {
+      margin: 0 0 6px;
+    }
+
+    .answer {
+      color: #145a1e;
+      font-weight: bold;
+    }
+
+    .difficulty-label {
+      display: inline-block;
+      font-size: 0.78em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 2px 9px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .easy   { background-color: #d4edda; color: #155724; }
+    .medium { background-color: #fff3cd; color: #856404; }
+    .hard   { background-color: #f8d7da; color: #721c24; }
+
+    /* Topic badge — colour-coded per subject */
+    .topic-badge {
+      display: inline-block;
+      font-size: 0.76em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 2px 9px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+
+    .t-density     { background-color: #dbeafe; color: #1e40af; }
+    .t-speed       { background-color: #fde8cc; color: #92400e; }
+    .t-force       { background-color: #dce8f4; color: #1e3a5f; }
+    .t-energy      { background-color: #dcfce7; color: #14532d; }
+    .t-pressure    { background-color: #ede9fe; color: #4c1d95; }
+    .t-accel       { background-color: #ccfaf4; color: #134e4a; }
+    .t-work        { background-color: #fee2e2; color: #7f1d1d; }
+    .t-units       { background-color: #fef9c3; color: #713f12; }
+    .t-graphs      { background-color: #e0e7ff; color: #312e81; }
+    .t-mixed       { background-color: #f1f5f9; color: #1e293b; border: 1px solid #cbd5e1; }
+
+    /* Topic reference grid */
+    .topic-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 16px;
+      font-size: 0.93em;
+      margin: 10px 0 14px;
+    }
+
+    .topic-grid-item {
+      background-color: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 5px 12px;
+    }
+
+    .topic-grid-item span {
+      font-family: 'Courier New', monospace;
+      color: #334155;
+    }
+
+    .key-rule {
+      background-color: #f1f5f9;
+      border-left: 3px solid #475569;
+      padding: 10px 16px;
+      margin: 10px 0 18px;
+      font-size: 0.95em;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .teacher-box {
+      background-color: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin-top: 1.5em;
+    }
+
+    .tpt-box {
+      background-color: #fff8e1;
+      border: 2px solid #f0c040;
+      padding: 22px 26px;
+      border-radius: 8px;
+      margin-top: 2em;
+    }
+
+    .tpt-box h2 {
+      border-bottom: none;
+      margin-top: 0;
+      color: #7a4f00;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #e8740c;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.05em;
+      font-weight: bold;
+      padding: 13px 28px;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.2s;
+    }
+
+    .cta-button:hover {
+      background-color: #c45e00;
+    }
+
+    .seo-block {
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin-top: 2em;
+    }
+
+    .seo-block h2 {
+      margin-top: 0;
+    }
+
+    .internal-link-box {
+      background-color: #eefaf3;
+      border-left: 4px solid #28a745;
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      margin-top: 2em;
+    }
+
+    .formula {
+      display: inline-block;
+      background-color: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      padding: 3px 12px;
+      font-family: 'Courier New', monospace;
+      font-size: 1em;
+      color: #111827;
+    }
+
+    /* Link list to individual topic pages */
+    .topic-links {
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 14px 20px;
+      margin-top: 1.5em;
+      font-size: 0.95em;
+    }
+
+    .topic-links strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #111827;
+    }
+
+    .topic-links ul {
+      margin: 0;
+      column-count: 2;
+      column-gap: 20px;
+    }
+
+    a {
+      color: #1a5faa;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.85em;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==============================
+       MAIN HEADING
+  =============================== -->
+  <h1>Middle School Physics Review Problems (With Answers)</h1>
+  <p><em>Free worksheet (12 problems with answers) — ready to use for Grades 6–8</em></p>
+
+  <!-- ==============================
+       INTRO
+  =============================== -->
+  <p>
+    This mixed review brings together the core formulas and concepts from an entire middle
+    school physics unit — density, speed, forces, energy, pressure, acceleration, work,
+    power, and unit conversions — in a single, 12-question practice set. Real assessments
+    rarely stay within one topic, so this review gives students exactly the kind of
+    mixed-formula practice they need to build genuine fluency: selecting the right formula,
+    identifying the right units, and working through multi-step problems without a topic
+    label to guide them.
+  </p>
+  <p>
+    These mixed physics review problems are designed for middle school teachers who need
+    a dependable, all-in-one revision tool. Use the full set as a <strong>practice test</strong>,
+    run individual problems as <strong>daily warm-ups</strong> during review week, assign
+    them for <strong>homework</strong> before an assessment, or spread them across
+    <strong>stations</strong> for an active revision lesson. Every problem is labelled by
+    topic and difficulty, and every answer is fully worked — so you can hand this directly
+    to students or use it as your answer key.
+  </p>
+
+  <!-- FORMULA REFERENCE BOX -->
+  <div class="key-rule">
+    <strong>Formula reference:</strong>
+    <div class="topic-grid" style="margin-top:8px;">
+      <div class="topic-grid-item">Density &nbsp;<span>ρ = m ÷ V</span></div>
+      <div class="topic-grid-item">Speed &nbsp;<span>v = s ÷ t</span></div>
+      <div class="topic-grid-item">Newton 2nd &nbsp;<span>F = m × a</span></div>
+      <div class="topic-grid-item">Kinetic Energy &nbsp;<span>KE = ½mv²</span></div>
+      <div class="topic-grid-item">Potential Energy &nbsp;<span>PE = mgh</span></div>
+      <div class="topic-grid-item">Pressure &nbsp;<span>p = F ÷ A</span></div>
+      <div class="topic-grid-item">Acceleration &nbsp;<span>a = Δv ÷ t</span></div>
+      <div class="topic-grid-item">Work &nbsp;<span>W = F × d</span></div>
+      <div class="topic-grid-item">Power &nbsp;<span>P = W ÷ t</span></div>
+      <div class="topic-grid-item">Net Force &nbsp;<span>F<sub>net</sub> = ΣF</span></div>
+    </div>
+  </div>
+
+  <!-- ==============================
+       PRACTICE PROBLEMS
+  =============================== -->
+  <p><strong>Quick classroom use:</strong> Use the first 4 problems as a warm-up, the next 4 for guided practice, and the final 4 as challenge or exit tickets.</p>
+
+  <h2>Mixed Physics Review Problems</h2>
+  <p>Each problem is labelled with its topic and difficulty. No formula is given — students must identify and apply the correct one, just as on a real test.</p>
+
+  <!-- ---- SECTION 1 ---- -->
+  <h3>Problems 1–4</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <span class="topic-badge t-density">Density</span>
+    <p><strong>Problem 1.</strong> A piece of metal has a mass of 390 g and a volume of 50 cm³. Calculate its density and identify whether it is likely to be aluminium (2.7 g/cm³), iron (7.87 g/cm³), or copper (8.96 g/cm³).</p>
+    <p class="answer">Answer: ρ = 390 ÷ 50 = 7.8 g/cm³ &nbsp;→&nbsp; <strong>most likely iron</strong> (density of iron ≈ 7.87 g/cm³).</p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <span class="topic-badge t-speed">Speed</span>
+    <p><strong>Problem 2.</strong> A cyclist covers 3.6 km in 12 minutes. Calculate the average speed in m/s. (Convert both distance and time to SI units first.)</p>
+    <p class="answer">Answer: Distance = 3,600 m &nbsp;|&nbsp; Time = 720 s &nbsp;→&nbsp;
+       v = 3,600 ÷ 720 = <strong>5 m/s</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <span class="topic-badge t-force">Forces</span>
+    <p><strong>Problem 3.</strong> A 15 kg box sits on a flat surface. Two horizontal forces act on it: 80 N to the right and 50 N to the left. Calculate the net force and the resulting acceleration.</p>
+    <p class="answer">Answer: F<sub>net</sub> = 80 − 50 = 30 N (right) &nbsp;→&nbsp;
+       a = F ÷ m = 30 ÷ 15 = <strong>2 m/s² to the right</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <span class="topic-badge t-energy">Energy</span>
+    <p><strong>Problem 4.</strong> A 3 kg ball is dropped from a height of 10 m. Calculate its gravitational potential energy at the top. What is its kinetic energy just before it hits the ground? (Use g = 10 m/s², assume no air resistance.)</p>
+    <p class="answer">Answer: PE = 3 × 10 × 10 = <strong>300 J</strong>.
+       By conservation of energy, KE at ground = <strong>300 J</strong>
+       (all PE has converted to KE).</p>
+  </div>
+
+  <!-- ---- SECTION 2 ---- -->
+  <h3>Problems 5–8</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <span class="topic-badge t-pressure">Pressure</span>
+    <p><strong>Problem 5.</strong> A 60 kg student stands on one foot during a science demo. The area of the sole of one shoe is 0.018 m². Calculate the pressure exerted on the floor. (Use g = 10 m/s²)</p>
+    <p class="answer">Answer: Weight = 60 × 10 = 600 N &nbsp;→&nbsp;
+       p = 600 ÷ 0.018 ≈ <strong>33,333 Pa (≈ 33.3 kPa)</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <span class="topic-badge t-accel">Acceleration</span>
+    <p><strong>Problem 6.</strong> A motorbike accelerates from 8 m/s to 26 m/s in 6 seconds. Calculate the acceleration. If the engine then cuts out and the bike decelerates at 3 m/s², how long does it take to stop from 26 m/s?</p>
+    <p class="answer">Answer: a = (26 − 8) ÷ 6 = <strong>3 m/s²</strong> &nbsp;|&nbsp;
+       Stopping time = 26 ÷ 3 ≈ <strong>8.67 seconds</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <span class="topic-badge t-work">Work &amp; Power</span>
+    <p><strong>Problem 7.</strong> A student pushes a 200 N trolley 15 m across a gym in 20 seconds. Calculate the work done and the student's average power output.</p>
+    <p class="answer">Answer: W = 200 × 15 = <strong>3,000 J</strong> &nbsp;→&nbsp;
+       P = 3,000 ÷ 20 = <strong>150 W</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <span class="topic-badge t-units">Unit Conversion</span>
+    <p><strong>Problem 8.</strong> A science problem gives: force = 2.5 kN, distance = 80 cm, time = 2 minutes. Convert all three values to standard SI units, then calculate the work done and the power output.</p>
+    <p class="answer">Answer: F = 2,500 N &nbsp;|&nbsp; d = 0.8 m &nbsp;|&nbsp; t = 120 s &nbsp;→&nbsp;
+       W = 2,500 × 0.8 = <strong>2,000 J</strong> &nbsp;→&nbsp;
+       P = 2,000 ÷ 120 ≈ <strong>16.7 W</strong></p>
+  </div>
+
+  <!-- ---- SECTION 3 ---- -->
+  <h3>Problems 9–12</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <span class="topic-badge t-graphs">Motion Graphs</span>
+    <p><strong>Problem 9.</strong> A velocity–time graph shows: Phase 1 — a straight line rising from (0 s, 0 m/s) to (5 s, 20 m/s). Phase 2 — a horizontal line at 20 m/s from (5 s) to (13 s). Phase 3 — a straight line falling from (13 s, 20 m/s) to (17 s, 0 m/s). Calculate the total distance covered and the acceleration in Phase 1.</p>
+    <p class="answer">Answer: Phase 1 (triangle): ½ × 5 × 20 = 50 m &nbsp;|&nbsp;
+       Phase 2 (rectangle): 8 × 20 = 160 m &nbsp;|&nbsp;
+       Phase 3 (triangle): ½ × 4 × 20 = 40 m &nbsp;→&nbsp;
+       Total = <strong>250 m</strong>.
+       Acceleration (Phase 1) = 20 ÷ 5 = <strong>4 m/s²</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <span class="topic-badge t-mixed">Mixed — Density + Pressure</span>
+    <p><strong>Problem 10.</strong> A solid aluminium cube has sides of 0.1 m. The density of aluminium is 2,700 kg/m³. (a) Calculate the volume of the cube. (b) Calculate the mass of the cube. (c) Calculate the pressure the cube exerts on the surface it rests on — the contact area is its base (0.1 m × 0.1 m). (Use g = 10 m/s²)</p>
+    <p class="answer">Answer:
+       (a) V = 0.1³ = <strong>0.001 m³</strong> &nbsp;|&nbsp;
+       (b) m = ρ × V = 2,700 × 0.001 = <strong>2.7 kg</strong> &nbsp;|&nbsp;
+       (c) Weight = 2.7 × 10 = 27 N &nbsp;→&nbsp; A = 0.01 m² &nbsp;→&nbsp;
+       p = 27 ÷ 0.01 = <strong>2,700 Pa</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <span class="topic-badge t-mixed">Mixed — Energy + Speed</span>
+    <p><strong>Problem 11.</strong> A 2 kg toy car rolls down a ramp. At the top of the ramp (height = 0.5 m) it is at rest. At the bottom it has converted all its potential energy to kinetic energy. (a) Calculate the PE at the top. (b) Calculate the speed at the bottom. (Use g = 10 m/s²)</p>
+    <p class="answer">Answer:
+       (a) PE = 2 × 10 × 0.5 = <strong>10 J</strong> &nbsp;|&nbsp;
+       (b) KE = 10 J &nbsp;→&nbsp; ½mv² = 10 &nbsp;→&nbsp; v² = (2 × 10) ÷ 2 = 10
+       &nbsp;→&nbsp; v = √10 ≈ <strong>3.16 m/s</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <span class="topic-badge t-mixed">Mixed — Force + Work + Power</span>
+    <p><strong>Problem 12.</strong> A 900 kg car accelerates from rest to 20 m/s in 10 seconds against a constant friction force of 500 N. (a) Calculate the acceleration. (b) Calculate the net force. (c) Calculate the engine force. (d) Calculate the work done by the engine over a 200 m distance and the engine's average power output.</p>
+    <p class="answer">Answer:
+       (a) a = 20 ÷ 10 = <strong>2 m/s²</strong>
+       &nbsp;|&nbsp; (b) F<sub>net</sub> = 900 × 2 = <strong>1,800 N</strong>
+       &nbsp;|&nbsp; (c) Engine force = F<sub>net</sub> + friction = 1,800 + 500 = <strong>2,300 N</strong>
+       &nbsp;|&nbsp; (d) W = 2,300 × 200 = <strong>460,000 J (460 kJ)</strong>
+       &nbsp;→&nbsp; P = 460,000 ÷ 10 = <strong>46,000 W (46 kW)</strong></p>
+  </div>
+
+  <p><strong>Need more problems like these?</strong> Use the free calculator to instantly generate unlimited new questions with different numbers — perfect for homework, differentiation, or extra practice.</p>
+
+  <!-- LINKS TO INDIVIDUAL TOPIC PAGES -->
+  <div class="topic-links">
+    <strong>Want problems focused on a single topic? Visit our individual practice pages:</strong>
+    <ul>
+      <li><a href="density-problems.html">Density Problems</a></li>
+      <li><a href="newton-problems.html">Newton's Laws (F = ma)</a></li>
+      <li><a href="energy-problems.html">Kinetic &amp; Potential Energy</a></li>
+      <li><a href="pressure-problems.html">Pressure Problems</a></li>
+      <li><a href="speed-problems.html">Speed &amp; Velocity</a></li>
+      <li><a href="acceleration-problems.html">Acceleration</a></li>
+      <li><a href="work-power-problems.html">Work &amp; Power</a></li>
+      <li><a href="motion-graphs-problems.html">Motion Graphs</a></li>
+      <li><a href="unit-conversions-problems.html">Unit Conversions</a></li>
+      <li><a href="forces-problems.html">Forces &amp; Net Force</a></li>
+    </ul>
+  </div>
+
+  <!-- ==============================
+       TEACHER USE SECTION
+  =============================== -->
+  <h2>How to Use These Review Problems in Class</h2>
+  <div class="teacher-box">
+    <ul>
+      <li><strong>Test Prep:</strong> Hand the full 12-problem set to students 3–5 days before a unit test. The mixed topics force students to choose their own formula — the exact skill assessed on real exams. Review answers the following day as a class.</li>
+      <li><strong>Revision Warm-ups:</strong> During a revision week, post one problem per day as a daily warm-up. The topic badges mean you can select by theme while keeping the format varied and unpredictable.</li>
+      <li><strong>Homework:</strong> Assign Problems 1–8 as a mid-unit check. Assign Problems 9–12 (multi-formula application problems) as pre-assessment homework in the final days before a test.</li>
+      <li><strong>Quizzes:</strong> Select 4–6 problems by topic to create a targeted 10-minute quiz. Problems 10–12 in particular work well as short-answer assessments that test multi-step reasoning.</li>
+      <li><strong>Stations:</strong> Print each problem on a half-sheet and place one per station around the room. Students rotate every 4–5 minutes. The formula reference box on this page can be printed as a desk card — or deliberately withheld to mimic exam conditions.</li>
+    </ul>
+  </div>
+
+  <!-- ==============================
+       INTERNAL LINKING
+  =============================== -->
+  <div class="internal-link-box">
+    <h2 style="margin-top:0; border-bottom:none; color:#155724;">Need More Practice?</h2>
+    <p>
+      <a href="physics-calculators.html"><strong>Generate Unlimited Practice Problems (Free Tool)</strong></a> — select any physics topic and instantly generate new problems with fresh numbers across density, force, energy, speed, pressure, and more.
+      It's the easiest way to produce a new mixed review set whenever you need one — for
+      a different class, a resit group, or a student who needs extra support before a test.
+    </p>
+  </div>
+
+  <p><strong>Short on time?</strong> If you need a full set of ready-to-print worksheets with more problems and answer keys, check the complete packs below.</p>
+
+  <!-- ==============================
+       TPT CONVERSION BLOCK
+  =============================== -->
+  <div class="tpt-box">
+    <h2>Full Physics Review Worksheets &amp; Test Packs</h2>
+    <p>
+      Save hours of revision planning. Our complete physics review packs cover every major
+      middle school topic — with structured worksheets, mixed-topic tests, and full answer
+      keys — all formatted and ready to print. No assembly required.
+    </p>
+    <ul>
+      <li>Mixed-topic worksheets covering density, forces, energy, speed, pressure, motion graphs, and more</li>
+      <li>Answer keys included for every worksheet and test — with working shown for all multi-step problems</li>
+      <li>Ready-to-print unit tests and review sheets in classroom-ready format for Grades 6–8</li>
+    </ul>
+    <a class="cta-button"
+       href="https://www.teacherspayteachers.com/store/eureka-science-lab"
+       target="_blank"
+       rel="noopener noreferrer">
+      Get Full Review Pack
+    </a>
+  </div>
+
+  <!-- ==============================
+       SEO TEXT BLOCK
+  =============================== -->
+  <div class="seo-block">
+    <h2>Free Physics Review Worksheets for Middle School</h2>
+    <p>
+      Most physics review worksheets for middle school focus on one formula at a time —
+      but real tests don't. This page gives you 12 free mixed physics problems with answers
+      that span the full range of middle school physical science: density, speed, Newton's
+      laws, energy, pressure, acceleration, work and power, motion graphs, unit conversions,
+      and net force. Every problem is labelled by topic and difficulty, and every answer
+      includes the full working — ready to use as a student handout or a personal answer key.
+    </p>
+    <p>
+      Whether you're building a physical science review worksheet for the end of a unit or
+      creating a mixed practice test before an exam, these problems give students exactly
+      the kind of formula-selection practice that separates strong performers from those
+      who only know the maths within a single topic. The multi-formula Application problems
+      (10–12) are especially useful for preparing students for the higher-order questions
+      that appear on standardised middle school science assessments.
+    </p>
+    <p>
+      Bookmark this page as your free go-to resource for physics review worksheet questions
+      with answers. For individual topic practice, visit our dedicated pages for each formula
+      linked above. When you're ready for a complete print-ready review pack with 50+ mixed
+      problems per topic, full unit tests, and a complete answer key, the Eureka Science Lab
+      packs on Teachers Pay Teachers are built specifically for busy middle school science
+      teachers who need professional-quality materials without the prep burden.
+    </p>
+  </div>
+
+  <!-- ==============================
+       INTERNAL LINKS
+  =============================== -->
+  <h2>More Free Physics Worksheets</h2>
+  <ul>
+    <li><a href="density-problems.html">Density Problems</a></li>
+    <li><a href="newton-problems.html">Newton's Laws (F = ma)</a></li>
+    <li><a href="energy-problems.html">Kinetic &amp; Potential Energy</a></li>
+    <li><a href="pressure-problems.html">Pressure Problems</a></li>
+    <li><a href="speed-problems.html">Speed &amp; Velocity</a></li>
+    <li><a href="acceleration-problems.html">Acceleration</a></li>
+    <li><a href="work-power-problems.html">Work &amp; Power</a></li>
+    <li><a href="motion-graphs-problems.html">Motion Graphs</a></li>
+    <li><a href="unit-conversions-problems.html">Unit Conversions</a></li>
+    <li><a href="forces-problems.html">Forces</a></li>
+    <li><a href="physics-review-problems.html">Physics Review</a></li>
+  </ul>
+
+  <!-- ==============================
+       FOOTER
+  =============================== -->
+  <footer>
+    <p>
+      © Eureka Science Lab &nbsp;|&nbsp;
+      <a href="https://www.teacherspayteachers.com/store/eureka-science-lab" target="_blank" rel="noopener noreferrer">
+        Visit Our TPT Store
+      </a>
+      &nbsp;|&nbsp; Free resources for middle school science teachers
+    </p>
+  </footer>
+
+</body>
+</html>

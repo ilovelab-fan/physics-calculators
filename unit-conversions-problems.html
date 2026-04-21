@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit Conversion Practice Problems With Answers</title>
+  <meta name="description" content="Free unit conversion practice problems with answers for middle school teachers. 12 metric conversion worksheet questions for Grades 6–8 — ready for bell ringers, homework, or test prep." />
+  <meta name="keywords" content="unit conversion problems with answers, measurement conversion worksheet middle school, unit conversion practice problems, metric conversions worksheet, physics units worksheet" />
+
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #1a1a1a;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+      color: #2e2000;
+    }
+
+    h2 {
+      font-size: 1.45em;
+      color: #2e2000;
+      margin-top: 2em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #f0d580;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      color: #7a5500;
+      margin-top: 1.6em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      margin: 0.4em 0 1em 1.4em;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.35em;
+    }
+
+    .problem-block {
+      background-color: #fdfaf0;
+      border-left: 4px solid #c8960a;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .problem-block p {
+      margin: 0 0 6px;
+    }
+
+    .answer {
+      color: #145a1e;
+      font-weight: bold;
+    }
+
+    .difficulty-label {
+      display: inline-block;
+      font-size: 0.78em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 2px 9px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .easy   { background-color: #d4edda; color: #155724; }
+    .medium { background-color: #fff3cd; color: #856404; }
+    .hard   { background-color: #f8d7da; color: #721c24; }
+
+    /* Conversion reference table */
+    .ref-box {
+      background-color: #fef9e7;
+      border: 1px solid #f0d580;
+      border-radius: 6px;
+      padding: 14px 20px;
+      margin: 0 0 20px;
+    }
+
+    .ref-box strong {
+      display: block;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #7a5500;
+      margin-bottom: 8px;
+    }
+
+    .ref-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px 20px;
+      font-size: 0.92em;
+    }
+
+    .ref-grid span {
+      background-color: #fff8d0;
+      border: 1px solid #e8cc60;
+      border-radius: 4px;
+      padding: 3px 10px;
+      font-family: 'Courier New', monospace;
+      color: #2e2000;
+    }
+
+    .teacher-box {
+      background-color: #fef9e7;
+      border: 1px solid #e8cc60;
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin-top: 1.5em;
+    }
+
+    .tpt-box {
+      background-color: #fff8e1;
+      border: 2px solid #f0c040;
+      padding: 22px 26px;
+      border-radius: 8px;
+      margin-top: 2em;
+    }
+
+    .tpt-box h2 {
+      border-bottom: none;
+      margin-top: 0;
+      color: #7a4f00;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #e8740c;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.05em;
+      font-weight: bold;
+      padding: 13px 28px;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.2s;
+    }
+
+    .cta-button:hover {
+      background-color: #c45e00;
+    }
+
+    .seo-block {
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin-top: 2em;
+    }
+
+    .seo-block h2 {
+      margin-top: 0;
+    }
+
+    .internal-link-box {
+      background-color: #eefaf3;
+      border-left: 4px solid #28a745;
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      margin-top: 2em;
+    }
+
+    .formula {
+      display: inline-block;
+      background-color: #fef9e7;
+      border: 1px solid #e8cc60;
+      border-radius: 4px;
+      padding: 3px 12px;
+      font-family: 'Courier New', monospace;
+      font-size: 1em;
+      color: #2e2000;
+    }
+
+    .step {
+      display: block;
+      margin-left: 1em;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    a {
+      color: #1a5faa;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.85em;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==============================
+       MAIN HEADING
+  =============================== -->
+  <h1>Unit Conversion Practice Problems (With Answers)</h1>
+  <p><em>Free worksheet (12 problems with answers) — ready to use for Grades 6–8</em></p>
+
+  <!-- ==============================
+       INTRO
+  =============================== -->
+  <p>
+    Getting units right isn't just a formality — it's the difference between a correct answer
+    and a completely wrong one. In physics, measurements only make sense when they are expressed
+    in the right units, and converting between them accurately is a foundational skill for every
+    topic from speed and density to force and energy. The metric system (SI units) organises
+    measurements around base-10 relationships, which means most conversions involve multiplying
+    or dividing by powers of 10 — once students see the pattern, it becomes fast and reliable.
+  </p>
+  <p>
+    These unit conversion practice problems are built for middle school teachers who need
+    curriculum-aligned questions covering length, mass, time, and the combined units used in
+    physics formulas. Use one as a <strong>bell ringer</strong> at the start of any science
+    lesson, hand a set out for <strong>homework</strong>, collect responses as
+    <strong>exit tickets</strong>, or run all 12 as a focused <strong>test prep review</strong>
+    before a unit assessment. Every problem includes a clearly worked answer with the
+    conversion steps shown.
+  </p>
+
+  <!-- CONVERSION REFERENCE BOX -->
+  <div class="ref-box">
+    <strong>Quick Conversion Reference</strong>
+    <div class="ref-grid">
+      <span>1 km = 1,000 m</span>
+      <span>1 m = 100 cm</span>
+      <span>1 cm = 10 mm</span>
+      <span>1 kg = 1,000 g</span>
+      <span>1 g = 1,000 mg</span>
+      <span>1 tonne = 1,000 kg</span>
+      <span>1 min = 60 s</span>
+      <span>1 hr = 3,600 s</span>
+      <span>1 km/h = 1÷3.6 m/s</span>
+    </div>
+  </div>
+
+  <!-- ==============================
+       PRACTICE PROBLEMS
+  =============================== -->
+  <p><strong>Quick classroom use:</strong> Use the first 4 problems as a warm-up, the next 4 for guided practice, and the final 4 as challenge or exit tickets.</p>
+
+  <h2>Unit Conversion Practice Problems</h2>
+  <p>Problems progress from single-step metric conversions to multi-step and real-world problems where incorrect units would give a wrong answer.</p>
+
+  <!-- ---- EASY ---- -->
+  <h3>Easy — Single-Step Metric Conversions</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <p><strong>Problem 1.</strong> Convert 3,500 cm to metres.</p>
+    <p class="answer">Answer: 3,500 ÷ 100 = <strong>35 m</strong>
+       <span class="step">(Divide by 100 because there are 100 cm in 1 m.)</span></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <p><strong>Problem 2.</strong> Convert 4.75 kg to grams.</p>
+    <p class="answer">Answer: 4.75 × 1,000 = <strong>4,750 g</strong>
+       <span class="step">(Multiply by 1,000 because there are 1,000 g in 1 kg.)</span></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <p><strong>Problem 3.</strong> Convert 8.2 km to metres.</p>
+    <p class="answer">Answer: 8.2 × 1,000 = <strong>8,200 m</strong>
+       <span class="step">(Multiply by 1,000 because there are 1,000 m in 1 km.)</span></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <p><strong>Problem 4.</strong> Convert 450 mm to centimetres and then to metres.</p>
+    <p class="answer">Answer: 450 mm ÷ 10 = 45 cm &nbsp;→&nbsp; 45 ÷ 100 = <strong>0.45 m</strong>
+       <span class="step">(Step 1: 10 mm = 1 cm. Step 2: 100 cm = 1 m.)</span></p>
+  </div>
+
+  <!-- ---- MEDIUM ---- -->
+  <h3>Medium — Multi-Step and Mixed Unit Conversions</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <p><strong>Problem 5.</strong> A car is travelling at 72 km/h. Convert this speed to metres per second (m/s).</p>
+    <p class="answer">Answer: Method 1 — divide by 3.6: 72 ÷ 3.6 = <strong>20 m/s</strong>
+       <span class="step">Method 2 — convert km to m (×1,000) and hours to seconds (÷3,600):
+         72,000 ÷ 3,600 = 20 m/s. ✓</span></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <p><strong>Problem 6.</strong> A science experiment takes 2 hours and 45 minutes. Express the total time in seconds.</p>
+    <p class="answer">Answer: 2 hr = 2 × 3,600 = 7,200 s &nbsp;|&nbsp;
+       45 min = 45 × 60 = 2,700 s &nbsp;→&nbsp;
+       Total = 7,200 + 2,700 = <strong>9,900 s</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <p><strong>Problem 7.</strong> A metal rod measures 2.35 m. Express this length in
+       (a) centimetres, (b) millimetres, and (c) kilometres.</p>
+    <p class="answer">Answer:
+       (a) 2.35 × 100 = <strong>235 cm</strong>
+       &nbsp;|&nbsp; (b) 2.35 × 1,000 = <strong>2,350 mm</strong>
+       &nbsp;|&nbsp; (c) 2.35 ÷ 1,000 = <strong>0.00235 km</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <p><strong>Problem 8.</strong> A bag of rice weighs 2.4 kg. A recipe requires 350 g of rice.
+       How many grams of rice remain after the recipe? Express the remainder in both grams and kilograms.</p>
+    <p class="answer">Answer: 2.4 kg = 2,400 g &nbsp;→&nbsp;
+       2,400 − 350 = <strong>2,050 g</strong>
+       &nbsp;→&nbsp; 2,050 ÷ 1,000 = <strong>2.05 kg</strong></p>
+  </div>
+
+  <!-- ---- APPLICATION / WORD PROBLEMS ---- -->
+  <h3>Application — Units in Real-World Physics Problems</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <p><strong>Problem 9.</strong> A student calculates the speed of a toy car as follows: distance = 150 cm, time = 3 s. She writes the answer as 50 cm/s. Her teacher asks her to express the speed in m/s and then in km/h. Convert both.</p>
+    <p class="answer">Answer: Speed = 50 cm/s &nbsp;→&nbsp;
+       50 ÷ 100 = <strong>0.5 m/s</strong> &nbsp;→&nbsp;
+       0.5 × 3.6 = <strong>1.8 km/h</strong>
+       <span class="step">(To convert m/s to km/h, multiply by 3.6.)</span></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <p><strong>Problem 10.</strong> A student measures the density of a liquid as 0.85 g/cm³.
+       Their teacher asks for the answer in kg/m³. Convert the density.
+       (Note: 1 g/cm³ = 1,000 kg/m³)</p>
+    <p class="answer">Answer: 0.85 g/cm³ × 1,000 = <strong>850 kg/m³</strong>
+       <span class="step">(This conversion matters when using SI units in physics formulas — using g/cm³ in an SI equation would give a wrong answer by a factor of 1,000.)</span></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <p><strong>Problem 11.</strong> A runner completes a 5 km race in 23 minutes and 20 seconds.
+       (a) Convert the total time to seconds.
+       (b) Convert the distance to metres.
+       (c) Calculate the runner's average speed in m/s, rounded to 2 decimal places.</p>
+    <p class="answer">Answer:
+       (a) 23 min = 1,380 s &nbsp;+&nbsp; 20 s = <strong>1,400 s</strong>
+       &nbsp;|&nbsp; (b) 5 km = <strong>5,000 m</strong>
+       &nbsp;|&nbsp; (c) v = 5,000 ÷ 1,400 ≈ <strong>3.57 m/s</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <p><strong>Problem 12.</strong> A physics problem gives these values: force = 0.5 kN, mass = 250 g, distance = 80 cm, time = 0.4 minutes. Convert every value to its standard SI unit (N, kg, m, s) before any calculation is attempted.</p>
+    <p class="answer">Answer:
+       Force: 0.5 kN × 1,000 = <strong>500 N</strong>
+       &nbsp;|&nbsp; Mass: 250 g ÷ 1,000 = <strong>0.25 kg</strong>
+       &nbsp;|&nbsp; Distance: 80 cm ÷ 100 = <strong>0.8 m</strong>
+       &nbsp;|&nbsp; Time: 0.4 × 60 = <strong>24 s</strong>
+       <span class="step">(All values are now in SI base units and safe to substitute into any standard physics formula.)</span></p>
+  </div>
+
+  <p><strong>Need more problems like these?</strong> Use the free calculator to instantly generate unlimited new questions with different numbers — perfect for homework, differentiation, or extra practice.</p>
+
+  <!-- ==============================
+       TEACHER USE SECTION
+  =============================== -->
+  <h2>How to Use These Unit Conversion Problems in Class</h2>
+  <div class="teacher-box">
+    <ul>
+      <li><strong>Bell Ringers:</strong> Post one Easy problem as students arrive — a quick single-step conversion takes 2–3 minutes and makes an excellent low-stakes opener for any science lesson, not just physics units.</li>
+      <li><strong>Exit Tickets:</strong> Use Problem 12 (the full SI conversion set) as an end-of-unit check. Students who can correctly convert all four values are ready to work with physics formulas independently.</li>
+      <li><strong>Homework:</strong> Assign Problems 1–8 after introducing the metric system. Problems 9–12 work well as extension tasks — they require students to apply conversions inside real physics contexts rather than in isolation.</li>
+      <li><strong>Review:</strong> Print the quick reference box separately as a desk card and have students work through all 12 problems without it first, then self-check using the reference. This builds genuine recall rather than dependence on the table.</li>
+      <li><strong>Test Prep:</strong> Unit conversion errors are one of the most common sources of lost marks on physics assessments. Assign the Application problems as a focused mini-quiz in the week before any unit test that involves formulas.</li>
+    </ul>
+  </div>
+
+  <!-- ==============================
+       INTERNAL LINKING
+  =============================== -->
+  <div class="internal-link-box">
+    <h2 style="margin-top:0; border-bottom:none; color:#155724;">Need More Practice?</h2>
+    <p>
+      <a href="physics-calculators.html"><strong>Generate Unlimited Practice Problems (Free Tool)</strong></a> — enter any value and instantly convert between metric units for length, mass, time, speed, and more.
+      It's the fastest way to create a fresh set of unit conversion problems with different
+      starting values whenever you need new questions for a quiz, a homework sheet, or
+      targeted practice for students who keep making conversion errors.
+    </p>
+  </div>
+
+  <p><strong>Short on time?</strong> If you need a full set of ready-to-print worksheets with more problems and answer keys, check the complete packs below.</p>
+
+  <!-- ==============================
+       TPT CONVERSION BLOCK
+  =============================== -->
+  <div class="tpt-box">
+    <h2>Ready-to-Use Unit Conversion Worksheets (No Prep)</h2>
+    <p>
+      Stop building conversion problems from scratch. Our printable unit conversion worksheet
+      packs are classroom-tested, fully formatted, and ready to hand out the moment you print
+      them — includes reference tables, scaffolded problems, and worked examples.
+    </p>
+    <ul>
+      <li>50+ structured conversion problems covering length, mass, time, speed, and combined physics units</li>
+      <li>Complete answer key included with conversion steps shown for every problem</li>
+      <li>Classroom-ready format — clean layout, built-in reference tables, works for all learners</li>
+    </ul>
+    <a class="cta-button"
+       href="https://www.teacherspayteachers.com/store/eureka-science-lab"
+       target="_blank"
+       rel="noopener noreferrer">
+      Get Full Worksheet Pack
+    </a>
+  </div>
+
+  <!-- ==============================
+       SEO TEXT BLOCK
+  =============================== -->
+  <div class="seo-block">
+    <h2>Free Unit Conversion Worksheets for Middle School</h2>
+    <p>
+      Finding reliable unit conversion problems with answers that are correctly levelled for
+      Grades 6–8 is harder than it looks. This page gives you 12 free, scaffolded metric
+      conversion practice problems — covering single-step length and mass conversions,
+      multi-step time and speed conversions, and real physics application problems — with
+      fully worked solutions that show every conversion step. No sign-up, no download, no
+      prep required.
+    </p>
+    <p>
+      Whether you're introducing the metric system for the first time or running a review
+      before a unit assessment, this metric conversions worksheet covers the skills that
+      underpin every middle school science formula: converting between km, m, cm, and mm;
+      between kg and g; between hours, minutes, and seconds; and between combined units like
+      km/h and m/s. The Application problems show students exactly why getting units right
+      matters — one wrong conversion can make an entire physics calculation incorrect.
+    </p>
+    <p>
+      Bookmark this page as your free resource for unit conversion practice problems with
+      answers. When you're ready for a complete print-ready set with 50+ problems,
+      built-in reference tables, and a full answer key with steps shown, the Eureka Science
+      Lab worksheet packs on Teachers Pay Teachers are built specifically for busy middle
+      school science teachers who need professional-quality materials without the prep burden.
+    </p>
+  </div>
+
+  <!-- ==============================
+       INTERNAL LINKS
+  =============================== -->
+  <h2>More Free Physics Worksheets</h2>
+  <ul>
+    <li><a href="density-problems.html">Density Problems</a></li>
+    <li><a href="newton-problems.html">Newton's Laws (F = ma)</a></li>
+    <li><a href="energy-problems.html">Kinetic &amp; Potential Energy</a></li>
+    <li><a href="pressure-problems.html">Pressure Problems</a></li>
+    <li><a href="speed-problems.html">Speed &amp; Velocity</a></li>
+    <li><a href="acceleration-problems.html">Acceleration</a></li>
+    <li><a href="work-power-problems.html">Work &amp; Power</a></li>
+    <li><a href="motion-graphs-problems.html">Motion Graphs</a></li>
+    <li><a href="unit-conversions-problems.html">Unit Conversions</a></li>
+    <li><a href="forces-problems.html">Forces</a></li>
+    <li><a href="physics-review-problems.html">Physics Review</a></li>
+  </ul>
+
+  <!-- ==============================
+       FOOTER
+  =============================== -->
+  <footer>
+    <p>
+      © Eureka Science Lab &nbsp;|&nbsp;
+      <a href="https://www.teacherspayteachers.com/store/eureka-science-lab" target="_blank" rel="noopener noreferrer">
+        Visit Our TPT Store
+      </a>
+      &nbsp;|&nbsp; Free resources for middle school science teachers
+    </p>
+  </footer>
+
+</body>
+</html>

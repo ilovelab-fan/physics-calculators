@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motion Graphs Practice Problems With Answers</title>
+  <meta name="description" content="Free motion graphs practice problems with answers for middle school teachers. 12 distance-time and velocity-time graph questions for Grades 6–8 — ready for bell ringers, homework, or test prep." />
+  <meta name="keywords" content="motion graphs worksheet, distance time graph problems, velocity time graph questions, graph interpretation physics middle school, motion graph practice problems" />
+
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #1a1a1a;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+      color: #1a1a3a;
+    }
+
+    h2 {
+      font-size: 1.45em;
+      color: #1a1a3a;
+      margin-top: 2em;
+      margin-bottom: 0.4em;
+      border-bottom: 2px solid #c5c8f0;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      color: #3a3a8a;
+      margin-top: 1.6em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      margin: 0.4em 0 1em 1.4em;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.35em;
+    }
+
+    .problem-block {
+      background-color: #f4f4fd;
+      border-left: 4px solid #4a4ab5;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .problem-block p {
+      margin: 0 0 6px;
+    }
+
+    .answer {
+      color: #145a1e;
+      font-weight: bold;
+    }
+
+    .difficulty-label {
+      display: inline-block;
+      font-size: 0.78em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 2px 9px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .easy   { background-color: #d4edda; color: #155724; }
+    .medium { background-color: #fff3cd; color: #856404; }
+    .hard   { background-color: #f8d7da; color: #721c24; }
+
+    .graph-type {
+      display: inline-block;
+      font-size: 0.8em;
+      font-weight: bold;
+      background-color: #e8e8f8;
+      color: #3a3a8a;
+      border: 1px solid #c5c8f0;
+      border-radius: 4px;
+      padding: 2px 9px;
+      margin-bottom: 8px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* Graph description box */
+    .graph-box {
+      background-color: #ffffff;
+      border: 1px dashed #9090c8;
+      border-radius: 5px;
+      padding: 10px 14px;
+      margin: 8px 0 10px;
+      font-size: 0.92em;
+      color: #333;
+    }
+
+    .graph-box strong {
+      display: block;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #4a4ab5;
+      margin-bottom: 4px;
+    }
+
+    /* Simple data table for graph points */
+    .graph-table {
+      border-collapse: collapse;
+      margin-top: 6px;
+      font-size: 0.9em;
+      width: auto;
+    }
+
+    .graph-table th {
+      background-color: #e8e8f8;
+      color: #1a1a3a;
+      padding: 4px 14px;
+      border: 1px solid #c5c8f0;
+      text-align: center;
+    }
+
+    .graph-table td {
+      padding: 3px 14px;
+      border: 1px solid #c5c8f0;
+      text-align: center;
+    }
+
+    .teacher-box {
+      background-color: #f2f2fc;
+      border: 1px solid #c0c0e8;
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin-top: 1.5em;
+    }
+
+    .tpt-box {
+      background-color: #fff8e1;
+      border: 2px solid #f0c040;
+      padding: 22px 26px;
+      border-radius: 8px;
+      margin-top: 2em;
+    }
+
+    .tpt-box h2 {
+      border-bottom: none;
+      margin-top: 0;
+      color: #7a4f00;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #e8740c;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.05em;
+      font-weight: bold;
+      padding: 13px 28px;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.2s;
+    }
+
+    .cta-button:hover {
+      background-color: #c45e00;
+    }
+
+    .seo-block {
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin-top: 2em;
+    }
+
+    .seo-block h2 {
+      margin-top: 0;
+    }
+
+    .internal-link-box {
+      background-color: #eefaf3;
+      border-left: 4px solid #28a745;
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      margin-top: 2em;
+    }
+
+    .formula {
+      display: inline-block;
+      background-color: #eeeef8;
+      border: 1px solid #c5c8f0;
+      border-radius: 4px;
+      padding: 3px 12px;
+      font-family: 'Courier New', monospace;
+      font-size: 1em;
+      color: #1a1a3a;
+    }
+
+    .key-rule {
+      background-color: #eeeef8;
+      border-left: 3px solid #4a4ab5;
+      padding: 8px 14px;
+      margin: 10px 0 14px;
+      font-size: 0.95em;
+      border-radius: 0 4px 4px 0;
+    }
+
+    a {
+      color: #1a5faa;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.85em;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==============================
+       MAIN HEADING
+  =============================== -->
+  <h1>Motion Graphs Practice Problems (With Answers)</h1>
+  <p><em>Free worksheet (12 problems with answers) — ready to use for Grades 6–8</em></p>
+
+  <!-- ==============================
+       INTRO
+  =============================== -->
+  <p>
+    Motion graphs are one of the most powerful tools in middle school physics — and one of the
+    most commonly misread. A <strong>distance–time (d–t) graph</strong> shows how far an
+    object has travelled over time: the steeper the slope, the faster the object is moving.
+    A horizontal line means the object is stationary. A <strong>velocity–time (v–t)
+    graph</strong> shows how an object's speed changes over time: a straight upward slope
+    means constant acceleration, a downward slope means deceleration, and a flat line means
+    constant velocity. The area under a velocity–time graph equals the distance travelled —
+    a key concept that students need to practise before it sticks.
+  </p>
+  <p>
+    These motion graph practice problems are built for middle school teachers who need
+    reliable, graph-interpretation questions without spending prep time. All graphs are
+    described in text with data tables so you can reproduce them on the board or in a
+    worksheet in seconds. Use one as a <strong>bell ringer</strong>, assign a set for
+    <strong>homework</strong>, collect responses as <strong>exit tickets</strong>, or run
+    all 12 as a focused <strong>test prep review</strong>. Every problem includes a fully
+    worked answer.
+  </p>
+
+  <!-- KEY RULES BOX -->
+  <div class="key-rule">
+    <strong>Quick reference:</strong> On a d–t graph, speed = slope = Δd ÷ Δt. &nbsp;|&nbsp;
+    On a v–t graph, acceleration = slope = Δv ÷ Δt, and distance = area under the line.
+  </div>
+
+  <!-- ==============================
+       PRACTICE PROBLEMS
+  =============================== -->
+  <p><strong>Quick classroom use:</strong> Use the first 4 problems as a warm-up, the next 4 for guided practice, and the final 4 as challenge or exit tickets.</p>
+
+  <h2>Motion Graph Practice Problems</h2>
+  <p>Problems progress from reading values directly off described graphs to interpreting slopes and areas, and on to full narrative descriptions of real-world journeys.</p>
+
+  <!-- ---- EASY ---- -->
+  <h3>Easy — Reading Values Directly from Graphs</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <span class="graph-type">Distance–Time Graph</span>
+    <p><strong>Problem 1.</strong> The graph below shows a straight line passing through the origin and reaching a distance of 60 m at t = 10 s. What is the speed of the object?</p>
+    <div class="graph-box">
+      <strong>Graph Description — Distance–Time</strong>
+      Straight line from (0 s, 0 m) to (10 s, 60 m). The line is diagonal and continuous — no change in gradient.
+      <table class="graph-table">
+        <tr><th>Time (s)</th><td>0</td><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td></tr>
+        <tr><th>Distance (m)</th><td>0</td><td>12</td><td>24</td><td>36</td><td>48</td><td>60</td></tr>
+      </table>
+    </div>
+    <p class="answer">Answer: Speed = slope = Δd ÷ Δt = 60 ÷ 10 = <strong>6 m/s</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <span class="graph-type">Distance–Time Graph</span>
+    <p><strong>Problem 2.</strong> A graph shows a horizontal straight line at d = 40 m from t = 0 s to t = 8 s. What does this tell you about the object's motion?</p>
+    <div class="graph-box">
+      <strong>Graph Description — Distance–Time</strong>
+      Flat horizontal line at distance = 40 m across the full time range 0–8 s. No rise or fall.
+    </div>
+    <p class="answer">Answer: A horizontal line on a d–t graph means the distance is not changing — <strong>the object is stationary (at rest)</strong>. Its speed is 0 m/s.</p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <span class="graph-type">Velocity–Time Graph</span>
+    <p><strong>Problem 3.</strong> A velocity–time graph shows a straight line from (0 s, 0 m/s) rising to (8 s, 16 m/s). What is the object's acceleration?</p>
+    <div class="graph-box">
+      <strong>Graph Description — Velocity–Time</strong>
+      Straight diagonal line from the origin (0, 0) rising uniformly to (8 s, 16 m/s).
+      <table class="graph-table">
+        <tr><th>Time (s)</th><td>0</td><td>2</td><td>4</td><td>6</td><td>8</td></tr>
+        <tr><th>Velocity (m/s)</th><td>0</td><td>4</td><td>8</td><td>12</td><td>16</td></tr>
+      </table>
+    </div>
+    <p class="answer">Answer: Acceleration = slope = Δv ÷ Δt = 16 ÷ 8 = <strong>2 m/s²</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label easy">Easy</span>
+    <span class="graph-type">Velocity–Time Graph</span>
+    <p><strong>Problem 4.</strong> A velocity–time graph shows a horizontal line at v = 12 m/s from t = 0 s to t = 10 s. What does this tell you about the object? What distance does it cover?</p>
+    <div class="graph-box">
+      <strong>Graph Description — Velocity–Time</strong>
+      Flat horizontal line at velocity = 12 m/s from t = 0 to t = 10 s.
+    </div>
+    <p class="answer">Answer: A horizontal line on a v–t graph means <strong>constant velocity — zero acceleration</strong>.
+       Distance = area under graph = 12 × 10 = <strong>120 m</strong></p>
+  </div>
+
+  <!-- ---- MEDIUM ---- -->
+  <h3>Medium — Interpreting Slope, Speed, and Area</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <span class="graph-type">Distance–Time Graph</span>
+    <p><strong>Problem 5.</strong> A distance–time graph has two straight-line segments. Segment A runs from (0 s, 0 m) to (5 s, 20 m). Segment B runs from (5 s, 20 m) to (10 s, 50 m). Which segment represents greater speed, and what are the two speeds?</p>
+    <div class="graph-box">
+      <strong>Graph Description — Distance–Time (two segments)</strong>
+      Segment A: shallower slope from (0, 0) to (5 s, 20 m).
+      Segment B: steeper slope continuing from (5 s, 20 m) to (10 s, 50 m).
+    </div>
+    <p class="answer">Answer: Speed A = 20 ÷ 5 = 4 m/s &nbsp;|&nbsp; Speed B = 30 ÷ 5 = 6 m/s &nbsp;→&nbsp;
+       <strong>Segment B is faster (6 m/s vs 4 m/s)</strong> — the steeper slope always means greater speed on a d–t graph.</p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <span class="graph-type">Velocity–Time Graph</span>
+    <p><strong>Problem 6.</strong> A velocity–time graph shows a straight line starting at v = 10 m/s at t = 0 s and falling to v = 0 m/s at t = 5 s. Calculate the deceleration and the total distance travelled.</p>
+    <div class="graph-box">
+      <strong>Graph Description — Velocity–Time (deceleration)</strong>
+      Straight line sloping downward from (0 s, 10 m/s) to (5 s, 0 m/s). Forms a right triangle with the time axis.
+    </div>
+    <p class="answer">Answer: Deceleration = Δv ÷ Δt = (0 − 10) ÷ 5 = <strong>−2 m/s²</strong>
+       &nbsp;|&nbsp; Distance = area of triangle = ½ × base × height = ½ × 5 × 10 = <strong>25 m</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <span class="graph-type">Distance–Time Graph</span>
+    <p><strong>Problem 7.</strong> Two cyclists, A and B, appear on the same distance–time graph. Both start from the same point at t = 0. After 8 seconds, Cyclist A has covered 48 m and Cyclist B has covered 32 m. What are their speeds? At t = 8 s, how far apart are they?</p>
+    <div class="graph-box">
+      <strong>Graph Description — Two Lines on Same D–T Graph</strong>
+      Both lines start at (0, 0). Cyclist A's line is steeper, reaching (8 s, 48 m). Cyclist B's line is shallower, reaching (8 s, 32 m).
+    </div>
+    <p class="answer">Answer: Speed<sub>A</sub> = 48 ÷ 8 = <strong>6 m/s</strong>
+       &nbsp;|&nbsp; Speed<sub>B</sub> = 32 ÷ 8 = <strong>4 m/s</strong>
+       &nbsp;|&nbsp; Gap = 48 − 32 = <strong>16 m apart</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label medium">Medium</span>
+    <span class="graph-type">Velocity–Time Graph</span>
+    <p><strong>Problem 8.</strong> A velocity–time graph shows three phases: Phase 1 — a straight line rising from (0 s, 0 m/s) to (4 s, 20 m/s). Phase 2 — a horizontal line at 20 m/s from (4 s) to (10 s). Phase 3 — a straight line falling from (10 s, 20 m/s) to (14 s, 0 m/s). Calculate the total distance travelled.</p>
+    <div class="graph-box">
+      <strong>Graph Description — Velocity–Time (three phases)</strong>
+      Triangle rising to 20 m/s over 4 s, then flat at 20 m/s for 6 s, then falling back to 0 over 4 s.
+    </div>
+    <p class="answer">Answer:
+       Phase 1 (triangle): ½ × 4 × 20 = 40 m &nbsp;|&nbsp;
+       Phase 2 (rectangle): 6 × 20 = 120 m &nbsp;|&nbsp;
+       Phase 3 (triangle): ½ × 4 × 20 = 40 m &nbsp;→&nbsp;
+       Total = 40 + 120 + 40 = <strong>200 m</strong></p>
+  </div>
+
+  <!-- ---- APPLICATION / WORD PROBLEMS ---- -->
+  <h3>Application — Describing and Interpreting Real-World Motion</h3>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <span class="graph-type">Distance–Time Graph</span>
+    <p><strong>Problem 9.</strong> A distance–time graph describes a dog's walk. Segment 1: straight line from (0 s, 0 m) to (10 s, 30 m). Segment 2: horizontal line from (10 s, 30 m) to (20 s, 30 m). Segment 3: straight line from (20 s, 30 m) to (30 s, 0 m). Describe the dog's motion in plain English for each phase, including speeds.</p>
+    <div class="graph-box">
+      <strong>Graph Description — Dog's Journey (three segments)</strong>
+      Rising line, then flat, then falling back to zero distance (return journey).
+    </div>
+    <p class="answer">Answer:
+       Segment 1: The dog <strong>walks away at 3 m/s</strong> (30 ÷ 10) for 10 seconds.
+       &nbsp;|&nbsp; Segment 2: The dog <strong>stops and rests</strong> for 10 seconds (speed = 0).
+       &nbsp;|&nbsp; Segment 3: The dog <strong>returns to the start at 3 m/s</strong>
+       (30 ÷ 10) — note the line falls back to zero, meaning it returned to its original position.</p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <span class="graph-type">Distance–Time Graph</span>
+    <p><strong>Problem 10.</strong> A distance–time graph shows a cyclist's journey. Segment A: (0 s, 0 m) to (6 s, 24 m) — straight line. Segment B: (6 s, 24 m) to (9 s, 24 m) — flat. Segment C: (9 s, 24 m) to (15 s, 60 m) — straight line. What is the cyclist's average speed for the entire 15-second journey? How does it compare to the speed in Segment C alone?</p>
+    <div class="graph-box">
+      <strong>Graph Description — Cyclist's Journey</strong>
+      Rising line to 24 m, pause, then steeper rising line reaching 60 m at 15 s.
+    </div>
+    <p class="answer">Answer: Total distance = 60 m. Total time = 15 s.
+       Average speed = 60 ÷ 15 = <strong>4 m/s</strong>.
+       Speed in Segment C = (60 − 24) ÷ (15 − 9) = 36 ÷ 6 = <strong>6 m/s</strong>.
+       The cyclist was faster in Segment C than the overall average — the rest period in Segment B pulled the average down.</p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <span class="graph-type">Velocity–Time Graph</span>
+    <p><strong>Problem 11.</strong> A velocity–time graph describes a car journey in four phases. Phase 1: rises from (0 s, 0 m/s) to (5 s, 15 m/s). Phase 2: flat at 15 m/s from (5 s) to (15 s). Phase 3: falls from (15 s, 15 m/s) to (20 s, 5 m/s). Phase 4: flat at 5 m/s from (20 s) to (25 s). Calculate the acceleration in Phase 1 and Phase 3, then find the total distance covered.</p>
+    <div class="graph-box">
+      <strong>Graph Description — Car Journey (four phases)</strong>
+      Rising line (0→15 m/s), flat at 15 m/s, declining line (15→5 m/s), flat at 5 m/s.
+    </div>
+    <p class="answer">Answer:
+       a<sub>1</sub> = 15 ÷ 5 = <strong>3 m/s²</strong> &nbsp;|&nbsp;
+       a<sub>3</sub> = (5 − 15) ÷ 5 = <strong>−2 m/s²</strong> (deceleration).
+       Distances — Phase 1 (triangle): ½ × 5 × 15 = 37.5 m &nbsp;|&nbsp;
+       Phase 2 (rectangle): 10 × 15 = 150 m &nbsp;|&nbsp;
+       Phase 3 (trapezium): ½ × (15 + 5) × 5 = 50 m &nbsp;|&nbsp;
+       Phase 4 (rectangle): 5 × 5 = 25 m &nbsp;→&nbsp;
+       Total = <strong>262.5 m</strong></p>
+  </div>
+
+  <div class="problem-block">
+    <span class="difficulty-label hard">Application</span>
+    <span class="graph-type">Both Graph Types</span>
+    <p><strong>Problem 12.</strong> Object X has a distance–time graph showing a straight line from (0 s, 0 m) to (10 s, 80 m). Object Y has a velocity–time graph showing a horizontal line at v = 6 m/s for 10 seconds. (a) What is the speed of Object X? (b) How far does Object Y travel? (c) Which object travels further in 10 seconds, and by how much?</p>
+    <div class="graph-box">
+      <strong>Graph Description — Object X (D–T): </strong>Straight line origin to (10 s, 80 m). &nbsp;|&nbsp;
+      <strong>Object Y (V–T): </strong>Flat horizontal line at 6 m/s for 10 s.
+    </div>
+    <p class="answer">Answer:
+       (a) Speed of X = 80 ÷ 10 = <strong>8 m/s</strong>.
+       (b) Distance of Y = 6 × 10 = <strong>60 m</strong>.
+       (c) <strong>Object X travels further by 20 m</strong> (80 m vs. 60 m).</p>
+  </div>
+
+  <p><strong>Need more problems like these?</strong> Use the free calculator to instantly generate unlimited new questions with different numbers — perfect for homework, differentiation, or extra practice.</p>
+
+  <!-- ==============================
+       TEACHER USE SECTION
+  =============================== -->
+  <h2>How to Use These Motion Graph Problems in Class</h2>
+  <div class="teacher-box">
+    <ul>
+      <li><strong>Bell Ringers:</strong> Display one Easy problem on the board. Sketch the described graph as students arrive and ask them to identify speed or motion type — a quick, visual warm-up that takes 3–4 minutes and gets students thinking before instruction starts.</li>
+      <li><strong>Exit Tickets:</strong> Use one Application problem at the end of class. Asking students to describe motion in their own words reveals conceptual understanding — not just formula recall — before the next lesson.</li>
+      <li><strong>Homework:</strong> Assign Problems 1–8 after covering both graph types. Problems 9–12 are strong extension tasks for students who need to practise writing full descriptions of motion and interpreting multi-phase journeys.</li>
+      <li><strong>Review:</strong> Print the graph description boxes separately and have students sketch the graph themselves before answering. This doubles as a graph-drawing exercise — a common assessment skill at Grade 6–8 level.</li>
+      <li><strong>Test Prep:</strong> Sort problems by graph type (d–t reading / d–t interpretation / v–t acceleration / v–t area) and run each group as a focused mini-quiz across the final week of the motion unit.</li>
+    </ul>
+  </div>
+
+  <!-- ==============================
+       INTERNAL LINKING
+  =============================== -->
+  <div class="internal-link-box">
+    <h2 style="margin-top:0; border-bottom:none; color:#155724;">Need More Practice?</h2>
+    <p>
+      <a href="physics-calculators.html"><strong>Generate Unlimited Practice Problems (Free Tool)</strong></a> — enter distance, time, or velocity values and instantly generate new graph scenarios with realistic numbers.
+      It's the fastest way to create a fresh set of motion graph problems whenever you need
+      new questions for a quiz, a differentiated homework sheet, or extra support for
+      struggling students.
+    </p>
+  </div>
+
+  <p><strong>Short on time?</strong> If you need a full set of ready-to-print worksheets with more problems and answer keys, check the complete packs below.</p>
+
+  <!-- ==============================
+       TPT CONVERSION BLOCK
+  =============================== -->
+  <div class="tpt-box">
+    <h2>Ready-to-Use Motion Graph Worksheets (No Prep)</h2>
+    <p>
+      Stop building graph problems from scratch. Our printable motion graph worksheet packs
+      include pre-drawn distance–time and velocity–time graphs — fully formatted and ready to
+      hand out the moment you print them. No sketching on the board, no last-minute prep required.
+    </p>
+    <ul>
+      <li>50+ graph interpretation problems covering d–t graphs, v–t graphs, and multi-phase journeys</li>
+      <li>Complete answer key included for every problem</li>
+      <li>Classroom-ready format — pre-drawn graphs, clear questions, works for all learners</li>
+    </ul>
+    <a class="cta-button"
+       href="https://www.teacherspayteachers.com/store/eureka-science-lab"
+       target="_blank"
+       rel="noopener noreferrer">
+      Get Full Worksheet Pack
+    </a>
+  </div>
+
+  <!-- ==============================
+       SEO TEXT BLOCK
+  =============================== -->
+  <div class="seo-block">
+    <h2>Free Motion Graph Worksheets for Middle School</h2>
+    <p>
+      Finding quality motion graphs worksheets with answers that are levelled correctly for
+      Grades 6–8 takes time most teachers don't have. This page gives you 12 free,
+      scaffolded graph interpretation problems — covering distance–time graphs,
+      velocity–time graphs, slope calculations, area-under-graph distance, and full journey
+      descriptions — with fully worked solutions ready to use as a student handout or
+      personal answer key.
+    </p>
+    <p>
+      Whether you're introducing distance–time graph problems for the first time or reviewing
+      velocity–time graph questions before a unit assessment, these middle school physics
+      problems cover exactly the skills that appear most frequently on science tests: reading
+      values, comparing gradients, identifying stationary periods, calculating acceleration
+      from slope, and finding distance from area. The Application problems build the analytical
+      writing skills that stretch students at every ability level.
+    </p>
+    <p>
+      Bookmark this page as your free resource for motion graph practice problems with answers.
+      When you're ready for a complete print-ready set with 50+ pre-drawn graph problems,
+      differentiated scaffolding, and a full answer key, the Eureka Science Lab worksheet
+      packs on Teachers Pay Teachers are designed specifically for busy middle school science
+      teachers who need professional-quality materials without the planning burden.
+    </p>
+  </div>
+
+  <!-- ==============================
+       INTERNAL LINKS
+  =============================== -->
+  <h2>More Free Physics Worksheets</h2>
+  <ul>
+    <li><a href="density-problems.html">Density Problems</a></li>
+    <li><a href="newton-problems.html">Newton's Laws (F = ma)</a></li>
+    <li><a href="energy-problems.html">Kinetic &amp; Potential Energy</a></li>
+    <li><a href="pressure-problems.html">Pressure Problems</a></li>
+    <li><a href="speed-problems.html">Speed &amp; Velocity</a></li>
+    <li><a href="acceleration-problems.html">Acceleration</a></li>
+    <li><a href="work-power-problems.html">Work &amp; Power</a></li>
+    <li><a href="motion-graphs-problems.html">Motion Graphs</a></li>
+    <li><a href="unit-conversions-problems.html">Unit Conversions</a></li>
+    <li><a href="forces-problems.html">Forces</a></li>
+    <li><a href="physics-review-problems.html">Physics Review</a></li>
+  </ul>
+
+  <!-- ==============================
+       FOOTER
+  =============================== -->
+  <footer>
+    <p>
+      © Eureka Science Lab &nbsp;|&nbsp;
+      <a href="https://www.teacherspayteachers.com/store/eureka-science-lab" target="_blank" rel="noopener noreferrer">
+        Visit Our TPT Store
+      </a>
+      &nbsp;|&nbsp; Free resources for middle school science teachers
+    </p>
+  </footer>
+
+</body>
+</html>
