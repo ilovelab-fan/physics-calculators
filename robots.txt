@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ilovelab-fan.github.io/physics-calculators/sitemap.xml
