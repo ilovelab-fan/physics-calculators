@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Middle School Physics Formula Sheet | Grades 6–8 | Free Printable</title>
+  <meta name="description" content="Free printable physics formula sheet for middle school — all formulas for motion, forces, energy, waves, circuits, pressure, density and more. Grades 6–8."/>
+  <meta name="keywords" content="physics formula sheet middle school, physics equations grades 6 7 8, printable physics formulas, free physics reference sheet, NGSS physics formulas"/>
+  <meta name="google-site-verification" content="w2ShPtrgX4TQ61aQBxZw9A7QCFK77p0zeF2wMtrgZOc"/>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;}
+    :root{
+      --blue:#1a56db;--dark:#0e3a8a;--bg:#f1f5f9;
+      --text:#1e293b;--border:#e2e8f0;--card:#fff;
+    }
+    html{scroll-behavior:smooth;}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:15px;}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:linear-gradient(135deg,#0e3a8a,#1a56db);box-shadow:0 2px 12px rgba(0,0,0,.25);}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;flex-wrap:wrap;padding:10px 16px;gap:6px;}
+    .nav-brand{font-size:1rem;font-weight:800;color:#fff;margin-right:12px;white-space:nowrap;text-decoration:none;}
+    .nav-links{display:flex;flex-wrap:wrap;gap:4px;}
+    .nav-links a{color:rgba(255,255,255,.82);font-size:.72rem;font-weight:600;text-decoration:none;padding:4px 9px;border-radius:20px;transition:background .2s;white-space:nowrap;}
+    .nav-links a:hover{background:rgba(255,255,255,.18);color:#fff;}
+
+    /* HERO */
+    #home{background:linear-gradient(135deg,#0e3a8a 0%,#1a56db 60%,#2563eb 100%);color:#fff;text-align:center;padding:76px 20px 30px;}
+    .hero-badge{display:inline-block;background:rgba(255,255,255,.15);border:1.5px solid rgba(255,255,255,.3);color:#fff;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:700;letter-spacing:.4px;margin-bottom:12px;}
+    #home h1{font-size:1.7rem;font-weight:900;margin-bottom:8px;line-height:1.2;}
+    #home p{font-size:.9rem;opacity:.85;max-width:520px;margin:0 auto 10px;}
+
+    /* CONTROLS */
+    #controls{background:#fff;border-bottom:1px solid var(--border);padding:12px 16px;position:sticky;top:52px;z-index:90;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+    .controls-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+    .ctrl-label{font-size:.78rem;font-weight:700;color:#64748b;white-space:nowrap;}
+    .topic-filters{display:flex;flex-wrap:wrap;gap:5px;flex:1;}
+    .tf{padding:5px 11px;border-radius:20px;border:1.5px solid var(--border);background:#f8fafc;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .15s;white-space:nowrap;color:#374151;}
+    .tf:hover{border-color:var(--blue);color:var(--blue);}
+    .tf.active{color:#fff!important;border-color:transparent;}
+    .btn-print{background:var(--dark);color:#fff;border:none;border-radius:8px;padding:6px 16px;font-size:.78rem;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0;}
+    .btn-print:hover{opacity:.88;}
+
+    /* ACTIVE COLORS */
+    .tf[data-topic="all"].active    {background:#0e3a8a;}
+    .tf[data-topic="motion"].active  {background:#1a56db;}
+    .tf[data-topic="forces"].active  {background:#dc2626;}
+    .tf[data-topic="gravity"].active {background:#7c3aed;}
+    .tf[data-topic="density"].active {background:#0891b2;}
+    .tf[data-topic="energy"].active  {background:#d97706;}
+    .tf[data-topic="work"].active    {background:#059669;}
+    .tf[data-topic="machines"].active{background:#059669;}
+    .tf[data-topic="pressure"].active{background:#ea580c;}
+    .tf[data-topic="waves"].active   {background:#0891b2;}
+    .tf[data-topic="circuits"].active{background:#db2777;}
+    .tf[data-topic="momentum"].active{background:#475569;}
+    .tf[data-topic="thermal"].active {background:#d97706;}
+
+    /* GRID */
+    #grid{max-width:1200px;margin:0 auto;padding:20px 16px 16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+
+    /* CARD */
+    .fc{
+      background:var(--card);border-radius:12px;padding:16px;
+      border:1.5px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.05);
+      cursor:pointer;transition:transform .15s,box-shadow .15s,border-color .18s;
+      display:flex;flex-direction:column;gap:10px;
+    }
+    .fc:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1);border-color:var(--c);}
+    .fc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+    .fc-name{font-size:.88rem;font-weight:800;color:var(--text);line-height:1.3;}
+    .fc-badge{font-size:.65rem;font-weight:700;padding:2px 8px;border-radius:10px;white-space:nowrap;flex-shrink:0;}
+
+    /* FORMULA DISPLAY */
+    .fc-formula{
+      background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:8px;
+      padding:12px 14px;text-align:center;
+      font-size:1.2rem;font-weight:700;color:var(--c);
+      line-height:1.6;letter-spacing:.01em;
+      border-left:4px solid var(--c);
+    }
+    .fc-formula sub{font-size:.62em;vertical-align:sub;}
+    .fc-formula sup{font-size:.62em;vertical-align:super;}
+
+    /* FRACTIONS */
+    .frac{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;line-height:1.15;margin:0 2px;}
+    .frac .n{border-bottom:1.5px solid currentColor;padding:0 3px 2px;text-align:center;white-space:nowrap;}
+    .frac .d{padding:2px 3px 0;text-align:center;white-space:nowrap;}
+    .frac sub{font-size:.62em;vertical-align:sub;}
+    .frac sup{font-size:.62em;vertical-align:super;}
+
+    .fc-vars{font-size:.76rem;color:#64748b;line-height:1.7;}
+    .fc-hint{font-size:.7rem;color:#94a3b8;font-style:italic;}
+
+    /* MODAL */
+    #modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;display:none;align-items:center;justify-content:center;padding:16px;}
+    #modal-overlay.open{display:flex;}
+    #modal{background:#fff;border-radius:16px;max-width:500px;width:100%;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.25);position:relative;max-height:90vh;overflow-y:auto;}
+    #modal-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#94a3b8;line-height:1;}
+    #modal-close:hover{color:#1e293b;}
+
+    .m-badge{font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:10px;display:inline-block;margin-bottom:10px;}
+    .m-name{font-size:1.25rem;font-weight:900;margin-bottom:14px;}
+    .m-formula-wrap{border-radius:10px;padding:16px;text-align:center;margin-bottom:16px;border-left-width:5px;border-left-style:solid;}
+    .m-formula{font-size:2rem;font-weight:800;line-height:1.6;}
+    .m-formula sub{font-size:.58em;vertical-align:sub;}
+    .m-formula sup{font-size:.58em;vertical-align:super;}
+    .m-formula .frac .n{border-bottom-width:2px;}
+
+    .m-section-title{font-size:.78rem;font-weight:700;color:#64748b;margin-bottom:6px;margin-top:12px;}
+    .m-rearr{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px;}
+    .m-rearr-pill{font-size:.88rem;font-weight:700;padding:5px 12px;border-radius:8px;background:#f1f5f9;}
+    .m-rearr-pill sub{font-size:.62em;vertical-align:sub;}
+    .m-rearr-pill sup{font-size:.62em;vertical-align:super;}
+    .m-vars{font-size:.85rem;color:#374151;line-height:1.85;}
+    .m-vars span{display:block;}
+    .m-example{background:#f0f9ff;border:1.5px solid #bae6fd;border-radius:10px;padding:14px;margin-top:12px;}
+    .m-ex-title{font-size:.78rem;font-weight:700;color:#0369a1;margin-bottom:5px;}
+    .m-ex-text{font-size:.85rem;color:#374151;line-height:1.6;}
+
+    /* BANNERS */
+    .banners{max-width:1200px;margin:8px auto 0;padding:0 16px 32px;}
+    .cross-link{background:linear-gradient(135deg,#0e3a8a,#1a56db);border-radius:12px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:12px;}
+    .cross-link p{color:#fff;font-size:.88rem;font-weight:600;}
+    .cross-link a{background:#fff;color:#1a56db;font-weight:800;font-size:.84rem;border-radius:8px;padding:9px 18px;text-decoration:none;white-space:nowrap;}
+    .tpt-cta{background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:12px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;}
+    .tpt-cta-body{flex:1;min-width:200px;}
+    .tpt-title{color:#fff;font-weight:700;font-size:.88rem;margin-bottom:5px;}
+    .tpt-list{list-style:none;padding:0;margin:0;color:rgba(255,255,255,.92);font-size:.78rem;line-height:1.65;}
+    .tpt-list li::before{content:'✓ ';}
+    .tpt-btn{background:#fff;color:#b45309;font-weight:800;font-size:.84rem;border:none;border-radius:8px;padding:10px 20px;text-decoration:none;white-space:nowrap;flex-shrink:0;}
+
+    /* SEO + FOOTER */
+    #seo{background:#f8fafc;border-top:1px solid #e2e8f0;padding:36px 20px;}
+    .seo-inner{max-width:900px;margin:0 auto;}
+    .seo-h{font-size:1.1rem;font-weight:800;color:#1e293b;margin-bottom:10px;}
+    .seo-p{font-size:.88rem;color:#374151;line-height:1.72;margin-bottom:10px;}
+    footer{background:linear-gradient(135deg,#0e3a8a,#1a56db);color:#fff;padding:22px 20px;}
+    footer .fi{max-width:900px;margin:0 auto;}
+    footer p{font-size:.84rem;opacity:.8;line-height:1.6;}
+    footer a{color:#93c5fd;text-decoration:none;}
+
+    /* PRINT */
+    @media print{
+      nav,#controls,#modal-overlay,.banners,#seo,footer{display:none!important;}
+      #home{padding:10px 0 6px;background:none!important;color:#000;}
+      #home h1{font-size:1.1rem;color:#000;}
+      #home p,#home .hero-badge{display:none;}
+      body{background:#fff;}
+      #grid{grid-template-columns:repeat(3,1fr);gap:6px;padding:6px 0;}
+      .fc{break-inside:avoid;box-shadow:none;border-color:#cbd5e1;cursor:default;padding:10px;}
+      .fc:hover{transform:none;box-shadow:none;}
+      .fc-formula{font-size:.95rem;padding:6px 8px;}
+      .fc-badge,.fc-hint{display:none;}
+    }
+    @media(max-width:600px){
+      #grid{grid-template-columns:1fr 1fr;}
+      .fc-formula{font-size:1rem;}
+    }
+    @media(max-width:380px){#grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="https://ilovelab-fan.github.io/physics-calculators/">⚗️ Eureka Science Lab</a>
+    <div class="nav-links">
+      <a href="https://ilovelab-fan.github.io/physics-calculators/">Physics Calculators</a>
+      <a href="https://ilovelab-fan.github.io/physics-calculators/unit-converter.html">Unit Converter</a>
+      <a href="https://www.teacherspayteachers.com/store/eureka-science-lab" target="_blank">Worksheets on TPT →</a>
+    </div>
+  </div>
+</nav>
+
+<section id="home">
+  <div class="hero-badge">Free Printable · Grades 6–8 · No Sign-Up</div>
+  <h1>📐 Physics Formula Sheet</h1>
+  <p>All middle school physics formulas in one place. Filter by topic, click any card for rearrangements and an example, or print the whole sheet.</p>
+</section>
+
+<div id="controls">
+  <div class="controls-inner">
+    <span class="ctrl-label">Topic:</span>
+    <div class="topic-filters">
+      <button class="tf active" data-topic="all"      onclick="filter(this)">All</button>
+      <button class="tf"        data-topic="motion"   onclick="filter(this)">🏃 Motion</button>
+      <button class="tf"        data-topic="forces"   onclick="filter(this)">💪 Forces</button>
+      <button class="tf"        data-topic="gravity"  onclick="filter(this)">🌍 Gravity</button>
+      <button class="tf"        data-topic="density"  onclick="filter(this)">⚗️ Density</button>
+      <button class="tf"        data-topic="energy"   onclick="filter(this)">⚡ Energy</button>
+      <button class="tf"        data-topic="work"     onclick="filter(this)">🔧 Work &amp; Power</button>
+      <button class="tf"        data-topic="machines" onclick="filter(this)">⚙️ Machines</button>
+      <button class="tf"        data-topic="pressure" onclick="filter(this)">🌬️ Pressure</button>
+      <button class="tf"        data-topic="waves"    onclick="filter(this)">〰️ Waves</button>
+      <button class="tf"        data-topic="circuits" onclick="filter(this)">💡 Circuits</button>
+      <button class="tf"        data-topic="momentum" onclick="filter(this)">🎯 Momentum</button>
+      <button class="tf"        data-topic="thermal"  onclick="filter(this)">🌡️ Thermal</button>
+    </div>
+    <button class="btn-print" onclick="window.print()">🖨️ Print / Save PDF</button>
+  </div>
+</div>
+
+<div id="grid"></div>
+
+<div class="banners">
+  <div class="cross-link">
+    <p>🔬 Practice these formulas with step-by-step calculators!</p>
+    <a href="https://ilovelab-fan.github.io/physics-calculators/">Free Physics Calculators →</a>
+  </div>
+  <div class="tpt-cta">
+    <div class="tpt-cta-body">
+      <p class="tpt-title">📄 Ready-to-Print Worksheet Packs — One for Every Formula</p>
+      <ul class="tpt-list">
+        <li>50+ problems per topic · Structured difficulty · Full answer key</li>
+        <li>Grades 6–8 · No prep · Print and teach tomorrow</li>
+      </ul>
+    </div>
+    <a href="https://www.teacherspayteachers.com/store/eureka-science-lab" target="_blank" class="tpt-btn">Browse on TPT →</a>
+  </div>
+</div>
+
+<section id="seo">
+  <div class="seo-inner">
+    <h2 class="seo-h">Free Middle School Physics Formula Sheet — Grades 6–8</h2>
+    <p class="seo-p">This free reference sheet covers all physics formulas taught in Grades 6–8 — motion, forces, gravity, density, energy, work, power, simple machines, pressure, waves, electric circuits, momentum, and heat. Every card shows the main equation, all rearrangements, variable definitions, and a worked example. Use the topic filter to focus on one unit, click any card to zoom in, or print the full sheet as a classroom reference.</p>
+    <p class="seo-p">Pairs perfectly with the <a href="https://ilovelab-fan.github.io/physics-calculators/">free step-by-step physics calculators</a> — see the formula here, then practice it live.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="fi">
+    <p style="font-weight:700;margin-bottom:6px;color:#e2e8f0;">Eureka Science Lab — Free Tools for Middle School Science</p>
+    <p><a href="https://ilovelab-fan.github.io/physics-calculators/">Physics calculators</a> &nbsp;·&nbsp; <a href="https://ilovelab-fan.github.io/physics-calculators/unit-converter.html">Unit converter</a> &nbsp;·&nbsp; <a href="https://www.teacherspayteachers.com/store/eureka-science-lab">Worksheets on TPT</a></p>
+    <p style="font-size:.74rem;opacity:.5;margin-top:6px;">© 2025 Eureka Science Lab · Free for classroom use</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div id="modal">
+    <button id="modal-close" onclick="closeModal()">✕</button>
+    <div id="m-badge" class="m-badge"></div>
+    <div id="m-name" class="m-name"></div>
+    <div id="m-formula-wrap" class="m-formula-wrap">
+      <div id="m-formula" class="m-formula"></div>
+    </div>
+    <div id="m-rearr-block">
+      <div class="m-section-title">Rearrangements</div>
+      <div id="m-rearr" class="m-rearr"></div>
+    </div>
+    <div class="m-section-title">Variables</div>
+    <div id="m-vars" class="m-vars"></div>
+    <div class="m-example">
+      <div class="m-ex-title">📘 Example</div>
+      <div id="m-ex" class="m-ex-text"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ─── helper: fraction HTML ─── */
+function fr(n,d){return `<span class="frac"><span class="n">${n}</span><span class="d">${d}</span></span>`;}
+
+/* ─────────────────────────────────────────────
+   FORMULA DATA
+   All multiplication uses · (middle dot)
+   All divisions use fr() fraction layout
+   Impulse symbol = I
+───────────────────────────────────────────── */
+const F = [
+
+  // ── MOTION ──────────────────────────────────
+  { t:'motion', name:'Speed', color:'#1a56db', badge:'🏃 Motion',
+    f:`v = ${fr('d','t')}`,
+    rearr:[`d = v · t`, `t = ${fr('d','v')}`],
+    vars:['v = speed (m/s)', 'd = distance (m)', 't = time (s)'],
+    ex:'A car travels 120 m in 6 s → v = 120 ÷ 6 = <strong>20 m/s</strong>' },
+
+  { t:'motion', name:'Average Speed', color:'#1a56db', badge:'🏃 Motion',
+    f:`v = ${fr('d<sub>total</sub>','t<sub>total</sub>')}`,
+    rearr:[],
+    vars:['v = average speed (m/s)', 'd<sub>total</sub> = total distance (m)', 't<sub>total</sub> = total time (s)'],
+    ex:'Cyclist covers 30 km in 1.5 h → v = 30 ÷ 1.5 = <strong>20 km/h</strong>' },
+
+  { t:'motion', name:'Acceleration', color:'#1a56db', badge:'🏃 Motion',
+    f:`a = ${fr('Δv','t')}`,
+    rearr:[`Δv = a · t`, `t = ${fr('Δv','a')}`],
+    vars:['a = acceleration (m/s²)', 'Δv = change in speed (m/s)', 't = time (s)'],
+    ex:'Bike goes from 0 to 12 m/s in 4 s → a = 12 ÷ 4 = <strong>3 m/s²</strong>' },
+
+  { t:'motion', name:'Final Velocity', color:'#1a56db', badge:'🏃 Motion',
+    f:'v<sub>2</sub> = v<sub>1</sub> + a · t',
+    rearr:[`a = ${fr('v<sub>2</sub> − v<sub>1</sub>','t')}`, `t = ${fr('v<sub>2</sub> − v<sub>1</sub>','a')}`],
+    vars:['v<sub>2</sub> = final speed (m/s)', 'v<sub>1</sub> = initial speed (m/s)', 'a = acceleration (m/s²)', 't = time (s)'],
+    ex:'v<sub>1</sub> = 5 m/s, a = 2 m/s², t = 3 s → v<sub>2</sub> = 5 + 2 · 3 = <strong>11 m/s</strong>' },
+
+  { t:'motion', name:'Distance (uniform accel.)', color:'#1a56db', badge:'🏃 Motion',
+    f:'d = v<sub>1</sub> · t + ½ · a · t<sup>2</sup>',
+    rearr:[],
+    vars:['d = distance (m)', 'v<sub>1</sub> = initial speed (m/s)', 'a = acceleration (m/s²)', 't = time (s)'],
+    ex:'v<sub>1</sub> = 0, a = 3 m/s², t = 4 s → d = ½ · 3 · 16 = <strong>24 m</strong>' },
+
+  // ── FORCES ──────────────────────────────────
+  { t:'forces', name:"Newton's 2nd Law", color:'#dc2626', badge:'💪 Forces',
+    f:'F = m · a',
+    rearr:[`m = ${fr('F','a')}`, `a = ${fr('F','m')}`],
+    vars:['F = force (N)', 'm = mass (kg)', 'a = acceleration (m/s²)'],
+    ex:'m = 5 kg, a = 3 m/s² → F = 5 · 3 = <strong>15 N</strong>' },
+
+  { t:'forces', name:'Weight', color:'#dc2626', badge:'💪 Forces',
+    f:'W = m · g',
+    rearr:[`m = ${fr('W','g')}`],
+    vars:['W = weight (N)', 'm = mass (kg)', 'g = 9.8 m/s² (Earth)'],
+    ex:'m = 60 kg → W = 60 · 9.8 = <strong>588 N</strong>' },
+
+  { t:'forces', name:'Friction Force', color:'#dc2626', badge:'💪 Forces',
+    f:'F<sub>f</sub> = μ · F<sub>n</sub>',
+    rearr:[`μ = ${fr('F<sub>f</sub>','F<sub>n</sub>')}`],
+    vars:['F<sub>f</sub> = friction force (N)', 'μ = coefficient of friction', 'F<sub>n</sub> = normal force (N)'],
+    ex:'μ = 0.4, F<sub>n</sub> = 50 N → F<sub>f</sub> = 0.4 · 50 = <strong>20 N</strong>' },
+
+  // ── GRAVITY ──────────────────────────────────
+  { t:'gravity', name:'Gravitational Force', color:'#7c3aed', badge:'🌍 Gravity',
+    f:'F<sub>g</sub> = m · g',
+    rearr:[`m = ${fr('F<sub>g</sub>','g')}`],
+    vars:['F<sub>g</sub> = gravitational force (N)', 'm = mass (kg)', 'g = 9.8 m/s² (Earth)'],
+    ex:'m = 10 kg → F<sub>g</sub> = 10 · 9.8 = <strong>98 N</strong>' },
+
+  { t:'gravity', name:'Free-Fall Distance', color:'#7c3aed', badge:'🌍 Gravity',
+    f:'d = ½ · g · t<sup>2</sup>',
+    rearr:[`t = √${fr('2 · d','g')}`],
+    vars:['d = distance fallen (m)', 'g = 9.8 m/s²', 't = time (s)'],
+    ex:'t = 3 s → d = ½ · 9.8 · 9 = <strong>44.1 m</strong>' },
+
+  { t:'gravity', name:'Law of Gravitation', color:'#7c3aed', badge:'🌍 Gravity',
+    f:`F = G · ${fr('m<sub>1</sub> · m<sub>2</sub>','r<sup>2</sup>')}`,
+    rearr:[],
+    vars:['F = gravitational force (N)', 'G = 6.674 · 10<sup>−11</sup> N·m²/kg²', 'm<sub>1</sub>, m<sub>2</sub> = masses (kg)', 'r = distance between centres (m)'],
+    ex:'Double the distance → force becomes ¼ as strong (inverse square law)' },
+
+  // ── DENSITY ──────────────────────────────────
+  { t:'density', name:'Density', color:'#0891b2', badge:'⚗️ Density',
+    f:`ρ = ${fr('m','V')}`,
+    rearr:[`m = ρ · V`, `V = ${fr('m','ρ')}`],
+    vars:['ρ = density (g/cm³ or kg/m³)', 'm = mass (g or kg)', 'V = volume (cm³ or m³)'],
+    ex:'m = 200 g, V = 50 cm³ → ρ = 200 ÷ 50 = <strong>4 g/cm³</strong>' },
+
+  // ── ENERGY ──────────────────────────────────
+  { t:'energy', name:'Kinetic Energy', color:'#d97706', badge:'⚡ Energy',
+    f:'KE = ½ · m · v<sup>2</sup>',
+    rearr:[`v = √${fr('2 · KE','m')}`, `m = ${fr('2 · KE','v<sup>2</sup>')}`],
+    vars:['KE = kinetic energy (J)', 'm = mass (kg)', 'v = speed (m/s)'],
+    ex:'m = 2 kg, v = 4 m/s → KE = ½ · 2 · 16 = <strong>16 J</strong>' },
+
+  { t:'energy', name:'Gravitational PE', color:'#d97706', badge:'⚡ Energy',
+    f:'PE = m · g · h',
+    rearr:[`h = ${fr('PE','m · g')}`, `m = ${fr('PE','g · h')}`],
+    vars:['PE = potential energy (J)', 'm = mass (kg)', 'g = 9.8 m/s²', 'h = height (m)'],
+    ex:'m = 5 kg, h = 3 m → PE = 5 · 9.8 · 3 = <strong>147 J</strong>' },
+
+  { t:'energy', name:'Conservation of Energy', color:'#d97706', badge:'⚡ Energy',
+    f:'KE<sub>1</sub> + PE<sub>1</sub> = KE<sub>2</sub> + PE<sub>2</sub>',
+    rearr:[],
+    vars:['Total mechanical energy stays constant', '(no friction or air resistance)', 'KE + PE = constant'],
+    ex:'Ball at 10 m height: PE = m · g · h. At ground: all PE converts to KE.' },
+
+  { t:'energy', name:'Efficiency', color:'#d97706', badge:'⚡ Energy',
+    f:`η = ${fr('W<sub>out</sub>','W<sub>in</sub>')} · 100%`,
+    rearr:[`W<sub>out</sub> = ${fr('η · W<sub>in</sub>','100')}`],
+    vars:['η = efficiency (%)', 'W<sub>out</sub> = useful output energy (J)', 'W<sub>in</sub> = total input energy (J)'],
+    ex:'W<sub>in</sub> = 500 J, W<sub>out</sub> = 350 J → η = (350 ÷ 500) · 100 = <strong>70%</strong>' },
+
+  // ── WORK & POWER ────────────────────────────
+  { t:'work', name:'Work', color:'#059669', badge:'🔧 Work & Power',
+    f:'W = F · d',
+    rearr:[`F = ${fr('W','d')}`, `d = ${fr('W','F')}`],
+    vars:['W = work (J)', 'F = force (N)', 'd = distance in direction of force (m)'],
+    ex:'F = 20 N, d = 5 m → W = 20 · 5 = <strong>100 J</strong>' },
+
+  { t:'work', name:'Power', color:'#059669', badge:'🔧 Work & Power',
+    f:`P = ${fr('W','t')}`,
+    rearr:[`W = P · t`, `t = ${fr('W','P')}`],
+    vars:['P = power (W)', 'W = work done (J)', 't = time (s)'],
+    ex:'W = 600 J, t = 10 s → P = 600 ÷ 10 = <strong>60 W</strong>' },
+
+  // ── SIMPLE MACHINES ─────────────────────────
+  { t:'machines', name:'Mechanical Advantage', color:'#059669', badge:'⚙️ Machines',
+    f:`MA = ${fr('F<sub>out</sub>','F<sub>in</sub>')}`,
+    rearr:[`F<sub>out</sub> = MA · F<sub>in</sub>`, `F<sub>in</sub> = ${fr('F<sub>out</sub>','MA')}`],
+    vars:['MA = mechanical advantage (no unit)', 'F<sub>out</sub> = output / load force (N)', 'F<sub>in</sub> = input / effort force (N)'],
+    ex:'Lift 600 N using 100 N effort → MA = 600 ÷ 100 = <strong>6</strong>' },
+
+  { t:'machines', name:'MA from Distances', color:'#059669', badge:'⚙️ Machines',
+    f:`MA = ${fr('d<sub>in</sub>','d<sub>out</sub>')}`,
+    rearr:[],
+    vars:['d<sub>in</sub> = effort distance (m)', 'd<sub>out</sub> = load distance (m)'],
+    ex:'Push 3 m to lift 0.5 m → MA = 3 ÷ 0.5 = <strong>6</strong>' },
+
+  { t:'machines', name:'Lever Law', color:'#059669', badge:'⚙️ Machines',
+    f:'F<sub>1</sub> · d<sub>1</sub> = F<sub>2</sub> · d<sub>2</sub>',
+    rearr:[`F<sub>1</sub> = ${fr('F<sub>2</sub> · d<sub>2</sub>','d<sub>1</sub>')}`],
+    vars:['F<sub>1</sub> = effort force (N)', 'd<sub>1</sub> = effort arm length (m)', 'F<sub>2</sub> = load force (N)', 'd<sub>2</sub> = load arm length (m)'],
+    ex:'F<sub>2</sub> = 400 N, d<sub>2</sub> = 0.5 m, d<sub>1</sub> = 2 m → F<sub>1</sub> = (400 · 0.5) ÷ 2 = <strong>100 N</strong>' },
+
+  // ── PRESSURE ────────────────────────────────
+  { t:'pressure', name:'Pressure', color:'#ea580c', badge:'🌬️ Pressure',
+    f:`p = ${fr('F','A')}`,
+    rearr:[`F = p · A`, `A = ${fr('F','p')}`],
+    vars:['p = pressure (Pa)', 'F = force (N)', 'A = area (m²)'],
+    ex:'F = 100 N, A = 0.02 m² → p = 100 ÷ 0.02 = <strong>5 000 Pa</strong>' },
+
+  { t:'pressure', name:'Fluid Pressure', color:'#ea580c', badge:'🌬️ Pressure',
+    f:'p = ρ · g · h',
+    rearr:[`h = ${fr('p','ρ · g')}`],
+    vars:['p = pressure (Pa)', 'ρ = fluid density (kg/m³)', 'g = 9.8 m/s²', 'h = depth (m)'],
+    ex:'Water (ρ = 1000 kg/m³), h = 5 m → p = 1000 · 9.8 · 5 = <strong>49 000 Pa</strong>' },
+
+  { t:'pressure', name:"Archimedes' Principle", color:'#ea580c', badge:'🌬️ Pressure',
+    f:'F<sub>b</sub> = ρ · g · V',
+    rearr:[],
+    vars:['F<sub>b</sub> = buoyant force (N)', 'ρ = fluid density (kg/m³)', 'g = 9.8 m/s²', 'V = volume displaced (m³)'],
+    ex:'Object displaces 0.002 m³ of water → F<sub>b</sub> = 1000 · 9.8 · 0.002 = <strong>19.6 N</strong>' },
+
+  // ── WAVES ────────────────────────────────────
+  { t:'waves', name:'Wave Speed', color:'#0891b2', badge:'〰️ Waves',
+    f:'v = f · λ',
+    rearr:[`f = ${fr('v','λ')}`, `λ = ${fr('v','f')}`],
+    vars:['v = wave speed (m/s)', 'f = frequency (Hz)', 'λ = wavelength (m)'],
+    ex:'f = 200 Hz, λ = 1.7 m → v = 200 · 1.7 = <strong>340 m/s</strong> (speed of sound)' },
+
+  { t:'waves', name:'Period & Frequency', color:'#0891b2', badge:'〰️ Waves',
+    f:`T = ${fr('1','f')}`,
+    rearr:[`f = ${fr('1','T')}`],
+    vars:['T = period (s) — time for one full wave', 'f = frequency (Hz) — waves per second'],
+    ex:'f = 50 Hz → T = 1 ÷ 50 = <strong>0.02 s</strong>' },
+
+  // ── CIRCUITS ─────────────────────────────────
+  { t:'circuits', name:"Ohm's Law", color:'#db2777', badge:'💡 Circuits',
+    f:'U = I · R',
+    rearr:[`I = ${fr('U','R')}`, `R = ${fr('U','I')}`],
+    vars:['U = voltage (V)', 'I = current (A)', 'R = resistance (Ω)'],
+    ex:'I = 2 A, R = 6 Ω → U = 2 · 6 = <strong>12 V</strong>' },
+
+  { t:'circuits', name:'Electric Power', color:'#db2777', badge:'💡 Circuits',
+    f:'P = U · I',
+    rearr:[`P = I<sup>2</sup> · R`, `P = ${fr('U<sup>2</sup>','R')}`],
+    vars:['P = power (W)', 'U = voltage (V)', 'I = current (A)', 'R = resistance (Ω)'],
+    ex:'U = 12 V, I = 2 A → P = 12 · 2 = <strong>24 W</strong>' },
+
+  { t:'circuits', name:'Electrical Energy', color:'#db2777', badge:'💡 Circuits',
+    f:'E = P · t',
+    rearr:[`P = ${fr('E','t')}`, `t = ${fr('E','P')}`],
+    vars:['E = energy (J or Wh)', 'P = power (W)', 't = time (s or h)'],
+    ex:'P = 100 W, t = 3 600 s → E = 100 · 3 600 = <strong>360 000 J</strong> = 0.1 kWh' },
+
+  // ── MOMENTUM ─────────────────────────────────
+  { t:'momentum', name:'Momentum', color:'#475569', badge:'🎯 Momentum',
+    f:'p = m · v',
+    rearr:[`m = ${fr('p','v')}`, `v = ${fr('p','m')}`],
+    vars:['p = momentum (kg·m/s)', 'm = mass (kg)', 'v = velocity (m/s)'],
+    ex:'m = 4 kg, v = 3 m/s → p = 4 · 3 = <strong>12 kg·m/s</strong>' },
+
+  { t:'momentum', name:'Impulse', color:'#475569', badge:'🎯 Momentum',
+    f:'I = F · t',
+    rearr:[`I = Δp = m · Δv`, `F = ${fr('Δp','t')}`],
+    vars:['I = impulse (N·s)', 'F = force (N)', 't = time (s)', 'Δp = change in momentum (kg·m/s)'],
+    ex:'F = 50 N, t = 0.4 s → I = 50 · 0.4 = <strong>20 N·s</strong>' },
+
+  { t:'momentum', name:'Conservation of Momentum', color:'#475569', badge:'🎯 Momentum',
+    f:'p<sub>1</sub> + p<sub>2</sub> = p\'<sub>1</sub> + p\'<sub>2</sub>',
+    rearr:[],
+    vars:['p<sub>1</sub>, p<sub>2</sub> = momenta before collision', 'p\'<sub>1</sub>, p\'<sub>2</sub> = momenta after collision', 'Closed system — no external forces'],
+    ex:'2 kg at 4 m/s hits stationary 2 kg → they share: v = <strong>2 m/s</strong> each' },
+
+  // ── THERMAL ──────────────────────────────────
+  { t:'thermal', name:'Heat Energy', color:'#d97706', badge:'🌡️ Thermal',
+    f:'Q = m · c · ΔT',
+    rearr:[`ΔT = ${fr('Q','m · c')}`, `m = ${fr('Q','c · ΔT')}`],
+    vars:['Q = heat energy (J)', 'm = mass (kg)', 'c = specific heat capacity (J/kg·°C)', 'ΔT = temperature change (°C)'],
+    ex:'m = 1 kg water (c = 4200), ΔT = 20°C → Q = 1 · 4200 · 20 = <strong>84 000 J</strong>' },
+
+  { t:'thermal', name:'Temperature Change', color:'#d97706', badge:'🌡️ Thermal',
+    f:'ΔT = T<sub>f</sub> − T<sub>i</sub>',
+    rearr:['T<sub>f</sub> = T<sub>i</sub> + ΔT'],
+    vars:['ΔT = temperature change (°C or K)', 'T<sub>f</sub> = final temperature', 'T<sub>i</sub> = initial temperature'],
+    ex:'T<sub>i</sub> = 20°C, T<sub>f</sub> = 80°C → ΔT = 80 − 20 = <strong>60°C</strong>' },
+
+];
+
+/* ─── RENDER ─── */
+let current = 'all';
+
+function buildGrid(t){
+  current = t;
+  const grid = document.getElementById('grid');
+  const list = t==='all' ? F : F.filter(f=>f.t===t);
+  grid.innerHTML = '';
+  list.forEach((f,i)=>{
+    const d = document.createElement('div');
+    d.className = 'fc';
+    d.style.setProperty('--c', f.color);
+    d.onclick = ()=>openModal(i, t);
+    const varsHtml = f.vars.slice(0,2).map(v=>`<div>${v}</div>`).join('');
+    const hintHtml = f.rearr.length
+      ? `<div class="fc-hint">▸ ${f.rearr.length} rearrangement${f.rearr.length>1?'s':''} · click to expand</div>`
+      : `<div class="fc-hint">▸ click for example</div>`;
+    d.innerHTML=`
+      <div class="fc-top">
+        <div class="fc-name">${f.name}</div>
+        <div class="fc-badge" style="background:color-mix(in srgb,${f.color} 12%,#fff);color:${f.color}">${f.badge}</div>
+      </div>
+      <div class="fc-formula" style="color:${f.color};border-left-color:${f.color};background:color-mix(in srgb,${f.color} 6%,#fff)">${f.f}</div>
+      <div class="fc-vars">${varsHtml}</div>
+      ${hintHtml}
+    `;
+    grid.appendChild(d);
+  });
+}
+
+function filter(btn){
+  document.querySelectorAll('.tf').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  buildGrid(btn.dataset.topic);
+}
+
+/* ─── MODAL ─── */
+function openModal(idx, t){
+  const list = t==='all' ? F : F.filter(f=>f.t===t);
+  const f = list[idx];
+  document.getElementById('m-badge').textContent = f.badge;
+  document.getElementById('m-badge').style.cssText = `background:color-mix(in srgb,${f.color} 12%,#fff);color:${f.color}`;
+  document.getElementById('m-name').textContent = f.name;
+  document.getElementById('m-formula').innerHTML = f.f;
+  const fw = document.getElementById('m-formula-wrap');
+  fw.style.cssText = `background:color-mix(in srgb,${f.color} 8%,#fff);border-left-color:${f.color}`;
+  document.getElementById('m-formula').style.color = f.color;
+  const rb = document.getElementById('m-rearr-block');
+  if(f.rearr.length){
+    document.getElementById('m-rearr').innerHTML = f.rearr.map(r=>`<span class="m-rearr-pill">${r}</span>`).join('');
+    rb.style.display='';
+  } else { rb.style.display='none'; }
+  document.getElementById('m-vars').innerHTML = f.vars.map(v=>`<span>• ${v}</span>`).join('');
+  document.getElementById('m-ex').innerHTML = f.ex;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+buildGrid('all');
+</script>
+</body>
+</html>
